@@ -1,0 +1,14 @@
+services:
+
+  client:
+    build: ./public
+    container_name: client
+    ports:
+      - 1234:1234
+
+  server:
+    build: ./server
+    container_name: server
+    ports:
+      - 3000:3000
+
